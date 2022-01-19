@@ -1,0 +1,45 @@
+footer {
+  background: black;
+  margin: 0;
+}
+
+ul.redeSocial {
+  list-style: none;
+  margin: 0;
+
+}
+ul.redeSocial li {
+  display: inline-block;
+  margin: 0;
+  padding: 10px
+
+}
+
+.fa {
+  font-size: 35pt;
+  color: white;
+  padding: 5px
+ 
+}
+
+.fa-github-square:hover {
+  color: #707070;
+}
+.fa-linkedin-square:hover {
+  color: #0a66c2;
+}
+.fa-instagram:hover {
+    color: #C13584;
+}
+.direitoRese{
+    font-size: 10pt !important;
+    color: white;
+    background-color: rgb(19, 19, 19)
+}
+.logoAng {
+    padding-left: 3px;
+    padding-bottom: 3px;
+    width: 20px;
+    height: 20px;
+    filter: invert();
+}

@@ -1,0 +1,11 @@
+.navbar {
+    background: black;
+} 
+
+.fs16 {
+    font-size: 16pt;
+}
+
+a {
+    cursor: pointer;
+}

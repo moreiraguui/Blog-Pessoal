@@ -1,0 +1,12 @@
+#imgBackground {
+    background-image: url('https://i.imgur.com/0p7218T.png');
+    min-height: 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.btn {
+    background-color: #C53F3F;
+}
