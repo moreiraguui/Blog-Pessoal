@@ -11,7 +11,7 @@ const routes: Routes = [
 
   {path:'menu', component: MenuComponent},
   {path:'entrar', component: EntrarComponent},
-  {path:'cadastro', component: CadastroComponent},
+  {path:'cadastrar', component: CadastroComponent},
   {path:'rodape', component: RodapeComponent},
 ];
 
