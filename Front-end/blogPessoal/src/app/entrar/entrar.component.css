@@ -1,26 +1,80 @@
-#imgBackground {
-  background-image: url("https://i.imgur.com/0p7218T.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 100vh;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap%27");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap%27");
+
+.bgGeral {
+  background-image: url('https://images5.alphacoders.com/120/1202843.jpg');
+  padding: 100px 500px;
 }
 
-  @media (max-width: 768px) {
-    #imgBackground {
-      display: none;
-    }
-    #tamEntrar { 
-     margin: 0 !important;
-    }
-} 
+.textMenu {
+  font-family: Poppins, sans-serif;
+  color: #4e4e4e;
+}
+
+
+
+.arredoLogin {
+    border-radius: 20px;
+    opacity: 100%;
+}
+
+.bgLeft {
+  background-color: #ffffff;
+  background-image: url('https://i.imgur.com/8lB98zA.png');
+  background-position: center;
+  padding: 0 10px;
+  background-size: cover;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.bgRight {
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 70px 50px !important;
+  font-family: Poppins, sans-serif;
+}
+
+.weHugText {
+  font-family: Montserrat;
+  font-weight: Bold;
+  color: #2b60e1;
+  font-size: 20pt;
+}
+span.weHugText {
+  color: #0f0e0c !important;
+}
+
+h2 {
+  font-family: Poppins, sans-serif;
+
+}
+
+h1 {
+  font-family: Poppins, sans-serif;
+}
+
+.formText {
+  padding-bottom: 10px;
+}
 
 .btn {
-  background-color: #c53f3f;
+  background: linear-gradient(to right, #0099FF, #4e7fe7);
+  color: #fff;
+  transition: .5s;
+  opacity: 1;
+  border: none !important;
+  border-radius: 30px;
 }
 
- #tamEntrar {
-  height: 100vh;
- }
+.btn:hover{
+  opacity: .9;
+}
 
+input {
+  border-radius: 20px;
+}
 
