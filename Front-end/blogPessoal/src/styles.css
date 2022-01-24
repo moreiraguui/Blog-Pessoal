@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+/* Toda vez que eu puxar ou deslizar a tela, ele vai de forma suave */
+html {
+    scroll-behavior: smooth;
+}
+
+.txtWelcome {
+    font-size: 54pt;
+}
+.txtWelcome2 {
+    font-size: 18pt;
+}

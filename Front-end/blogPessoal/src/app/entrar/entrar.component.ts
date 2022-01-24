@@ -23,7 +23,7 @@ export class EntrarComponent implements OnInit {
   }
 
   entrar(){
-    this.authService.entrar(this.usuarioLogin).subscribe((resp: UsuarioLogin) =>                                                         {
+    this.authService.entrar(this.usuarioLogin).subscribe((resp: UsuarioLogin) =>{
       this.usuarioLogin = resp
 
       environment.token = this.usuarioLogin.token
@@ -34,7 +34,7 @@ export class EntrarComponent implements OnInit {
       console.log(environment.token) //apagar depois
       console.log(environment.nome)
       console.log(environment.foto)
-      console.log(environment.id)
+      console.log(environment.id) 
 
       this.router.navigate(['/inicio'])
     }, erro => {
