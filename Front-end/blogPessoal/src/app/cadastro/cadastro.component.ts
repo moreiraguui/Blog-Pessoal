@@ -39,8 +39,11 @@ export class CadastroComponent implements OnInit {
     if(this.usuario.senha != this.confirmarSenha){
       alert('As senhas estão divergentes. Tente novamente!')
     } else {
+             /*Pega os valores inseridos na variável user,
+        transforma em Json para que o Backend entenda a requisição*/
       this.authService.cadastrar(this.usuario).subscribe((resp: Usuario) => {
         this.usuario = resp
+        // Redireciona o usuário
         this.router.navigate(['/entrar'])
         alert('Usuário cadastrado com sucesso!')
       })

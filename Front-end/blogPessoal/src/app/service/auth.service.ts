@@ -15,6 +15,7 @@ export class AuthService {
     private http: HttpClient 
   ) {}
 
+  // Observable garante que o Userlogin irá receber um Objeto do Tipo UserLogin
   entrar(usuarioLogin: UsuarioLogin): Observable<UsuarioLogin>{
     return this.http.post<UsuarioLogin>('https://moreiraguuiblogpessoal.herokuapp.com/usuarios/logar', usuarioLogin)
 
