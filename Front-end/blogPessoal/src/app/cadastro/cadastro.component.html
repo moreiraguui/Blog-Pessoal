@@ -1,13 +1,9 @@
-<div class="container-fluid">
-    <div class="row d-flex align-items-center">
+<div class="bgGeral container-fluid">
+                   
+    <div class="arredoLogin col-md-12 d-flex justify-content-center p-0" >
+                               
 
-        
-
-        <div class="col-md-6">
-            
-
-            <div class="row d-flex justify-content-center">
-                <div class="col-md-10 d-flex justify-content-center flex-column" id="tamEntrar">
+        <div class="bgLeft col-md-6 d-block justify-content-center p-0">     
 
                     <h1 class="text-center pb-3">Cadastro</h1>
 
@@ -22,23 +18,28 @@
                         <input [(ngModel)]= 'usuario.usuario' class="form-control" type="text" name="usuario" id="usuario"
                         placeholder="Digite aqui o seu usuário">
                     </div>
+
                     <div class="form-group">
                         <label for="foto">Link da Foto</label>
                         <input [(ngModel)]='usuario.foto' class="form-control" type="text" name="foto" id="foto"
                         placeholder="Digite aqui o link da sua foto">
                     </div>
                     
-                    <div class="form-group">
-                        <label for="senha">Senha</label>
-                        <input (input)="confirmSenha($event)" class="form-control" type="password" name="senha" id="senha"
-                        placeholder="Digite aqui a sua senha">
-                    </div>
-                    <div class="form-group">
-                        <label for="confirmSenha">Confirmar Senha</label>
-                        <input [(ngModel)]= 'usuario.senha' class="form-control" type="password" name="senha" id="senha"
+                    <div class="form-group d-flex justify-content-center">    
+                        <div class="col-md-6 p-0 pr-1">
+                            <label for="senha">Senha</label>
+                            <input (input)="confirmSenha($event)" class="form-control" type="password" name="senha" id="senha"
+                            placeholder="Digite aqui a sua senha">
+                        </div>
+                        
+                        <div class="col-md-6 p-0 pl-1">
+                            <label for="confirmSenha">Confirmar Senha</label>
+                            <input [(ngModel)]= 'usuario.senha' class="form-control" type="password" name="senha" id="senha"
                         placeholder="Confirme aqui sua senha">
-                    </div>
-                    <div class="form-group">
+                        </div>
+                    </div>             
+
+                    <div class="form-group mb-4">
                         <label for="tipo">Tipo de Usuário</label>
                         <select class ="form-control" name="tipo" id="tipo" (change)="tipoUsuario($event)">
                             <option>Selecione um tipo de usuário:</option>
@@ -46,21 +47,25 @@
                             <option value="adm">Administrador</option>
                         </select>
                     </div>
-                    <div class="d-flex justify-content-center">
-                        <button type="submit" class="btn btn-danger mr-4" routerLink='/entrar'>Cancelar</button>
-                        <button type="submit" class="btn btn-success" (click)="cadastrar()">Cadastrar</button>
+                    
+                    <div class="d-flex flex-row-reverse">
+                        <button type="submit" class="btn btn-success ml-4 w-100" (click)="cadastrar()">Cadastrar</button>
+                        <button type="submit" class="btn btn-danger w-100" routerLink='/entrar'>Cancelar</button>                    
                     </div>
 
-
+                        <p class="d-flex justify-content-center pt-3">Já possui um login?  
+                            <a class="pl-1" routerLink="/entrar">Entre</a>
+                         </p>
 
                
                 </div>
-
-                    </div>
+                <div class="bgRight col-md-6 d-flex justify-content-center p-0" id="tamEntrar">                                       
+                                                    
                 </div>
-                <div class="col-md-6" id="imgBackground"> </div>
-        </div>
-    </div>
+                    </div>
+               
+            </div>
+
     
 
 

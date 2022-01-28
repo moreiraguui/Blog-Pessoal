@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap%27");
 
 .bgGeral {
-  background-image: url('https://images5.alphacoders.com/120/1202843.jpg');
+  background-image: url("https://images5.alphacoders.com/120/1202843.jpg");
   padding: 100px 500px;
 }
 
@@ -12,21 +12,24 @@
   color: #4e4e4e;
 }
 
-
-
 .arredoLogin {
-    border-radius: 20px;
-    opacity: 100%;
+  border-radius: 20px;
+  opacity: 100%;
 }
 
 .bgLeft {
   background-color: #ffffff;
-  background-image: url('https://i.imgur.com/8lB98zA.png');
+
   background-position: center;
   padding: 0 10px;
   background-size: cover;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
+}
+
+#tamEntrar {
+  background-image: url("https://i.imgur.com/8lB98zA.png");
+  
 }
 
 .bgRight {
@@ -38,43 +41,49 @@
   font-family: Poppins, sans-serif;
 }
 
-.weHugText {
-  font-family: Montserrat;
-  font-weight: Bold;
-  color: #2b60e1;
-  font-size: 20pt;
-}
-span.weHugText {
-  color: #0f0e0c !important;
-}
-
 h2 {
   font-family: Poppins, sans-serif;
-
 }
 
 h1 {
-  font-family: Poppins, sans-serif;
+  font-family: Montserrat, sans-serif;
+  color: #4e4e4e;
+  font-size: 3rem;
+  margin-bottom: 30px;
 }
 
 .formText {
-  padding-bottom: 10px;
+  padding-bottom: 15px;
+  margin-bottom: 0;
 }
 
 .btn {
-  background: linear-gradient(to right, #0099FF, #4e7fe7);
+  background: linear-gradient(to right, #0099ff, #4e7fe7);
   color: #fff;
-  transition: .5s;
+  transition: 0.5s;
   opacity: 1;
   border: none !important;
   border-radius: 30px;
 }
 
-.btn:hover{
-  opacity: .9;
+.btn:hover {
+  opacity: 0.9;
 }
 
 input {
   border-radius: 20px;
 }
 
+label {
+  font-size: 11pt;
+}
+
+.txtRemb {
+  font-size: 11pt !important;
+}
+
+@media (max-width: 768px) {
+  #tamEntrar {
+    display: none !important;
+  }
+}

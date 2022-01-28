@@ -1,14 +1,13 @@
 footer {
   background: black;
   margin: 0;
-
 }
 
 ul.redeSocial {
   list-style: none;
   margin: 0;
-
 }
+
 ul.redeSocial li {
   display: inline-block;
   margin: 0;
@@ -20,7 +19,6 @@ ul.redeSocial li {
   font-size: 28px !important;
   color: white;
   padding: 1px
- 
 }
 
 .fa-github-alt:hover {
@@ -29,8 +27,18 @@ ul.redeSocial li {
 .fa-linkedin:hover {
   color: #0a66c2;
 }
+.fa-instagram{
+
+  font-size: 3rem;
+}
 .fa-instagram:hover {
-    color: #C13584;
+  background: -moz-linear-gradient(top, rgba(131,58,180,1),rgba(253,29,29,0.7595413165266106),rgba(252,176,69,1));
+  background: -webkit-linear-gradient(top, rgba(131,58,180,1),rgba(253,29,29,0.7595413165266106),rgba(252,176,69,1));
+  background: linear-gradient(to bottom, rgba(131,58,180,1),rgba(253,29,29,0.7595413165266106),rgba(252,176,69,1));
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .direitoRese{
@@ -41,11 +49,10 @@ ul.redeSocial li {
 }
 
 .fab.fa-angular{
-  font-size: 12px !important;
+  font-size: 20px !important;
   color: white;
  
 }
 .fab.fa-angular:hover{
   color: rgb(182, 5, 5);
 }
-

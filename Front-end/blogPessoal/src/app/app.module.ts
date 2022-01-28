@@ -13,6 +13,8 @@ import { RodapeComponent } from './rodape/rodape.component';
 import { ModelComponent } from './model/model.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { TemaComponent } from './tema/tema.component';
+import { TemaEditComponent } from './edit/tema-edit/tema-edit.component';
+import { TemaDeleteComponent } from './delete/tema-delete/tema-delete.component';
 
 
 
@@ -26,6 +28,8 @@ import { TemaComponent } from './tema/tema.component';
     ModelComponent,
     InicioComponent,
     TemaComponent,
+    TemaEditComponent,
+    TemaDeleteComponent,
 
   ],
   imports: [

@@ -1,32 +1,51 @@
 <div class="bgGeral container-fluid">
                    
-    <div class="arredoLogin container col-md-12 d-flex justify-content-center p-0" >
+    <div class="arredoLogin col-md-12 d-flex justify-content-center p-0" >
         
         <div class="bgLeft col-md-6 d-flex justify-content-center p-0" id="tamEntrar">                                       
                                                     
-            </div>                    
+        </div>                    
 
-        <div class="bgRight col-md-6 d-block justify-content-center align-items-center p-0" id="tamEntrar">                                       
-            <h1 class="text-center mb-5">Entrar</h1>
+        <div class="bgRight col-md-6 d-block justify-content-center p-0">                                       
+            <h1 class="text-center">Entrar</h1>
             <form>
-                <div class="formText form-group">
-                <label for="usuario">Usuário</label>
-                <input [(ngModel)]= 'usuarioLogin.usuario' class="form-control" type="text" name="usuario" id="usuario"
-                placeholder="Digite aqui o seu usuário">
-            </div>
-            <div class="formText form-group">
-                <label for="senha">Senha</label>
-                <input [(ngModel)]= 'usuarioLogin.senha' class="form-control" type="password" name="senha" id="senha"
-                placeholder="Digite aqui a sua senha">                                      
-            </div>
 
+                <div class="formText form-group">
+                <label for="usuario">Usuário</label> 
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text"><i class="fas fa-user"></i></div>
+                      </div>
+                      <input [(ngModel)]= 'usuarioLogin.usuario' class="form-control" type="text" id="usuario" name="usuario" placeholder="Usuário">
+                    </div>
+                    </div>
+                   
+                    <div class="formText form-group"></div>
+                    <label class ="m-0" for="senha">Senha</label>
+                        <div class="input-group mt-0">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text"><i class="fas fa-lock"></i></div>
+                      </div>
+                      <input [(ngModel)]= 'usuarioLogin.senha' class="form-control" type="password" class="form-control" id="senha" name="senha" placeholder="Senha">
+                    </div>     
+
+            <div class="txtRemb ml-2 mt-3 form-check form-group">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label pt-0 " for="defaultCheck1">
+                  Relembrar usuário
+                </label>
+              </div>
             <div class="d-flex justify-content-center pt-1">
                 <button type="submit" class ="btn w-100 mb-2" (click)='entrar()'>Entrar</button>
             </div>
+           
             <hr class="mt-4 mb-4">
             <p class="text-center" style="font-size: 10pt;">Não tem uma conta? <a routerLink="/cadastro">Cadastre-se</a></p>
+            
+            
         </form>
             
+        
             
         </div>
 

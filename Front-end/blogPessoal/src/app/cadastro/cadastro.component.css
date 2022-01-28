@@ -6,13 +6,42 @@
     height: 100vh;
 }
 
+.bgGeral {
+    background-image: url("https://i.imgur.com/AUyOIPz.jpg");
+    padding: 80px 400px;
+  }
+  
+.arredoLogin {
+    border-radius: 20px;
+    opacity: 100%;
+}
+
+.bgRight {
+    background-color: #ffffff;
+    background-position: center;
+    background-size: cover;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#tamEntrar {
+    background-image: url("https://i.imgur.com/8lB98zA.png");
+    width: auto;
+    height: auto;
+    background-position: center;
+}
+
 @media (max-width: 768px) {
-    #imgBackground {
+    #tamEntrar {
         display: none;
     }
 }
 
-#tamEntrar {
-    height: 100vh;
-   }
-  
+.bgLeft {
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 30px 20px !important;
+    font-family: Poppins, sans-serif;
+}

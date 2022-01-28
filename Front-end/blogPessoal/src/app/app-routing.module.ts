@@ -13,8 +13,10 @@ const routes: Routes = [
   {path:'cadastro', component: CadastroComponent},
 
   {path: 'inicio', component: InicioComponent},
-  {path: 'tema', component: TemaComponent},
-  
+  {path: 'temas', component: TemaComponent},
+
+  {path: 'tema-edit/:id', component: TemaComponent}, // passar parametro por rota no angular
+  {path: 'tema-delete/:id', component: TemaComponent}
 ];
 
 @NgModule({
