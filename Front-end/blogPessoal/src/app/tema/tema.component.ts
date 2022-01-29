@@ -29,9 +29,10 @@ export class TemaComponent implements OnInit {
         this.findAllTemas()
   }
 
-    findAllTemas(){
-      this.temaService.getAllTemas().subscribe((resp: Tema[])=>{
-        this.listaTemas = resp
+  findAllTemas(){
+    this.temaService.getAllTemas().subscribe((resp: Tema[])=>{
+      this.listaTemas = resp
+      console.log(resp)
       })
   }
   
@@ -41,6 +42,6 @@ export class TemaComponent implements OnInit {
       alert('Tema cadastrado com sucesso!')
       this.findAllTemas()
       this.tema = new Tema()
-    })
+      })
   }
 }
