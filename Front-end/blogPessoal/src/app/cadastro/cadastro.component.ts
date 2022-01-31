@@ -46,7 +46,6 @@ export class CadastroComponent implements OnInit {
         // Redireciona o usuário
         this.router.navigate(['/entrar'])
         alert('Usuário cadastrado com sucesso!')
-        console.log(resp)
       })
     }
 

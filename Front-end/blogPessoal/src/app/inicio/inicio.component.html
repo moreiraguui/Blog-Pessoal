@@ -26,7 +26,7 @@
   </div>
 </div>
 
-<div class="container my-5" id="postagens">
+<div class="container my-3" id="postagens">
     <nav>
         <div class="nav nav-tabs d-flex justify-content-center" id="nav-tab" role="tablist">
           <a class="nav-link active txtNav2 text-secondary font-weight-bold" id="nav-todasPostagens-tab" data-toggle="tab" href="#todasPostagens" role="tab" aria-controls="nav-todasPostagens" aria-selected="true">Todas as Postagens</a>
@@ -37,18 +37,21 @@
         </div>
       </nav>    
 
-      <div class="txtNav d-flex justify-content-center tab-content mt-5" id="nav-tabContent">
+      <div class="txtNav tab-content mt-4" id="nav-tabContent">
         <div class="tab-pane fade show active" id="todasPostagens" role="tabpanel" aria-labelledby="nav-todasPostagens-tab">
 
           <div class="card-columns">
-            <div class="card" *ngFor='let item of listaPostagens'>
+            <div class="card d-flex flex-row align-items-center" *ngFor='let item of listaPostagens'>
               <img src="{{item.foto}}" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title m-0">{{item.titulo}}</h5>
-                <small class="text-muted">Tema: {{item.tema.descricao}}</small>
-                <p class="card-text mt-3">{{item.texto}}</p>
-                <p class="card-text"><small class="text-muted">{{item.data | date: 'dd/MM/yyyy'}}</small></p>
-                <p class="card-text"><small class="text-muted">by: {{item.usuario.nome}}</small></p>
+              <div class="card-body p-0">
+                <h5 class="card-title my-3">{{item.titulo}}</h5>
+                <div class="d-flex flex-row align-items-center"> 
+                  <small class="text-muted"><i class="fas fa-list-ul pr-2"></i>{{item.tema.descricao}}</small>
+                  <small class="text-muted"><i class="fas fa-calendar-alt pr-2"></i>{{item.data | date: 'dd/MM/yyyy'}}</small>
+                  <small class="text-muted"><i class="fas fa-user pr-2"></i>{{item.usuario.nome}}</small>
+                </div>
+                  <p class="card-text my-3">{{item.texto}}</p>
+               
               </div>
             </div>
           </div>
@@ -56,13 +59,17 @@
         
         <div class="tab-pane fade" id="minhasPostagens" role="tabpanel" aria-labelledby="nav-minhasPostagens-tab">   
           <div class="card-columns">
-            <div class="card" *ngFor='let item of usuario.postagem'>
+            <div class="card d-flex flex-row align-items-center" *ngFor='let item of usuario.postagem'>
               <img src="{{item.foto}}" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title m-0">{{item.titulo}}</h5>
-                <small class="text-muted">Tema: {{item.tema.descricao}}</small>        
-                <p class="card-text mt-3">{{item.texto}}</p>
-                <p class="card-text"><small class="text-muted">{{item.data | date: 'dd/MM/yyyy'}}</small></p>
+              <div class="card-body pb-3 pt-0 pl-0 pr-0 ">
+                <h5 class="card-title my-3">{{item.titulo}}</h5>
+                <div class="d-flex flex-row align-items-center"> 
+                <small class="text-muted"><i class="fas fa-list-ul pr-2"></i>{{item.tema.descricao}}</small>        
+                <small class="text-muted"><i class="fas fa-calendar-alt pr-2"></i>{{item.data | date: 'dd/MM/yyyy'}}</small>
+              </div>
+              <p class="card-text my-3">{{item.texto}}</p>
+                <a [routerLink]="['/postagem-edit', item.id]" class="text-info mr-4" href=""><i class="fas fa-edit pr-1"></i>Editar</a>
+                <a [routerLink]="['/postagem-delete', item.id]"class="text-danger" href=""><i class="fas fa-trash-alt pr-1"></i>Apagar</a>        
               </div>
             </div>
           </div>
@@ -70,14 +77,15 @@
 
         <div class="tab-pane fade" id="postagensTema" role="tabpanel" aria-labelledby="nav-postagensTema-tab">
           <div class="card-columns" *ngFor="let tema of listaTemas">
-            <div class="card" *ngFor='let item of tema.postagem'>
+            <div class="card d-flex flex-row align-items-center" *ngFor='let item of tema.postagem'>
               <img src="{{item.foto}}" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title m-0">{{item.titulo}}</h5>
-                <p class="card-text mt-3">{{item.texto}}</p>
-                <p class="card-text">
-                <small class="text-muted">{{item.data | date: 'dd/MM/yyyy'}}</small></p>
-                <p class="card-text"><small class="text-muted">by: {{item.usuario.nome}}</small></p>
+              <div class="card-body p-0">
+                <h5 class="card-title my-3">{{item.titulo}}</h5>
+                <div class="d-flex flex-row align-items-center">                 
+                <small class="text-muted"><i class="fas fa-calendar-alt pr-2"></i>{{item.data | date: 'dd/MM/yyyy'}}</small>
+                <small class="text-muted"><i class="fas fa-user pr-2"></i>{{item.usuario.nome}}</small>
+                </div>
+                <p class="card-text my-3">{{item.texto}}</p>
               </div>
              </div>
           </div>

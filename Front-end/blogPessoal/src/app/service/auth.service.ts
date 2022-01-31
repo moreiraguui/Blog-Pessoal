@@ -11,7 +11,7 @@ import { UsuarioLogin } from '../model/UsuarioLogin';
   providedIn: 'root'
 })
 export class AuthService {
-
+ 
   constructor(
     private http: HttpClient 
   ) {}                                
@@ -35,6 +35,10 @@ export class AuthService {
   cadastrar(usuario: Usuario): Observable<Usuario>{
     return this.http.post<Usuario>('https://moreiraguuiblogpessoal.herokuapp.com/usuarios/cadastrar', usuario)
 
+  }
+
+  atualizar(usuario: Usuario): Observable<Usuario>{
+    return this.http.put<Usuario>('https://moreiraguuiblogpessoal.herokuapp.com/usuarios/atualizar', usuario, this.token)
   }
 
   getByIdUsuario(id: number): Observable<Usuario>{

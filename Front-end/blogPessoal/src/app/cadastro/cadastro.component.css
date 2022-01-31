@@ -1,3 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap%27");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap%27");
+
+
 #imgBackground {
     background-image: url('https://i.imgur.com/Vyww2b0.png');
     background-position: absolute;
@@ -33,7 +38,7 @@
 
 @media (max-width: 768px) {
     #tamEntrar {
-        display: none;
+        display: none !important;
     }
 }
 
@@ -43,6 +48,24 @@
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     padding: 30px 20px !important;
-    font-family: Poppins, sans-serif;
+   }
+
+label {
+    font-size: 1.12rem !important;
+    font-family: Montserrat, sans-serif !important;
 }
 
+input {
+    font-size: 0.8rem !important;
+    font-family: Poppins, sans-serif !important;
+
+}
+
+.possuiCada {
+    font-family: Poppins, sans-serif !important;
+
+}
+
+button {
+    font-family: Poppins, sans-serif !important;
+}

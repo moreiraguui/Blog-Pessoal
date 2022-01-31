@@ -38,7 +38,6 @@
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   padding: 70px 50px !important;
-  font-family: Poppins, sans-serif;
 }
 
 h2 {
@@ -48,7 +47,7 @@ h2 {
 h1 {
   font-family: Montserrat, sans-serif;
   color: #4e4e4e;
-  font-size: 3rem;
+  font-size: 3rem !important;
   margin-bottom: 30px;
 }
 
@@ -61,13 +60,13 @@ h1 {
   background: #24C6DC;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to left, #514A9D, #24C6DC);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to left, #514A9D, #24C6DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
-  
   color: #fff;
   transition: 0.5s;
   opacity: 1;
   border: none !important;
   border-radius: 30px;
+  font-family: Poppins, sans-serif !important;
+
 }
 
 .btn:hover {
@@ -76,14 +75,20 @@ h1 {
 
 input {
   border-radius: 20px;
+  font-family: Poppins, sans-serif !important;
+  font-size: 0.8rem !important;
 }
 
 label {
-  font-size: 11pt;
+  font-size: 1.12rem !important;
+  font-family: Montserrat, sans-serif !important;
 }
 
 .txtRemb {
-  font-size: 11pt !important;
+  font-size: 1rem !important;
+  padding: 0 !important;
+  margin-left: 21px;
+  font-family: Poppins, sans-serif !important;
 }
 
 @media (max-width: 768px) {
@@ -92,3 +97,11 @@ label {
   }
 }
 
+.form-check-input{
+  margin-top: 5px !important;
+}
+
+.naoTemCad {
+  font-family: Poppins, sans-serif !important;
+  font-size: 0.9rem !important;
+}

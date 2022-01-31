@@ -36,4 +36,6 @@ export class TemaService {
   deleteTema(id: number){
     return this.http.delete(`https://moreiraguuiblogpessoal.herokuapp.com/temas/${id}`, this.token) //para passar parametros
   }
+  
+
 }
