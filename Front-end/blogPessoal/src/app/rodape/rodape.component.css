@@ -1,5 +1,6 @@
 footer {
-  background: black;
+  /* background-image: url('https://i.imgur.com/AUyOIPz.jpg'); */
+  background-color: rgb(29, 29, 29);
   margin: 0;
 }
 
@@ -44,7 +45,8 @@ ul.redeSocial li {
 .direitoRese{
     font-size: 8pt !important;
     color: white;
-    background-color: rgb(19, 19, 19);
+    /* background-image: url('https://i.imgur.com/AUyOIPz.jpg'); */
+    background-color: rgb(34, 34, 34);
     margin-bottom: 0;
 }
 

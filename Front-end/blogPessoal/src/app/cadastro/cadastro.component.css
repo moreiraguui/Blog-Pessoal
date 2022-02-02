@@ -9,49 +9,69 @@
     background-repeat: no-repeat;
     background-size: contain;
     height: 100vh;
+    width: 100vh;
+
 }
 
 .bgGeral {
-    background-image: url("https://i.imgur.com/AUyOIPz.jpg");
-    padding: 80px 400px;
+background: #ad5389;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #3c1053, #ad5389);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #3c1053, #ad5389); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    /* background-image: url("https://i.imgur.com/AUyOIPz.jpg"); */
+    /* padding: 80px 350px; */
+  padding: 50px 0;
   }
   
 .arredoLogin {
     border-radius: 20px;
-    opacity: 100%;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
 }
 
 .bgRight {
     background-color: #ffffff;
     background-position: center;
-    background-size: cover;
+    padding: 0 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-}
+   
+
+}                                                                                   
 
 #tamEntrar {
-    background-image: url("https://i.imgur.com/8lB98zA.png");
-    width: auto;
-    height: auto;
-    background-position: center;
+    background-image: url("https://i.imgur.com/QpjSQFn.png") !important;
+    width: 40px !important;
+    height: 40px !important;
+ 
 }
 
 @media (max-width: 768px) {
     #tamEntrar {
         display: none !important;
     }
+    .bgLeft {
+        background-color: #ffffff;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        padding: 30px 20px !important;
+       }
+       label {
+        font-size: 0.7rem !important;
+        font-family: Montserrat, sans-serif !important;
+    }
 }
 
 .bgLeft {
     background-color: #ffffff;
-    border: 1px solid #ffffff;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    padding: 30px 20px !important;
+    padding: 30px 30px !important;
    }
 
 label {
-    font-size: 1.12rem !important;
+    font-size: 0.9rem !important;
     font-family: Montserrat, sans-serif !important;
 }
 
@@ -68,4 +88,9 @@ input {
 
 button {
     font-family: Poppins, sans-serif !important;
+}
+
+button:hover {
+    transform: scale(0.8);
+    transition:all 0.3s ease;
 }

@@ -4,7 +4,7 @@
 
 .bgGeral {
   background-image: url("https://images5.alphacoders.com/120/1202843.jpg");
-  padding: 100px 500px;
+  padding: 80px 0;
 }
 
 .textMenu {
@@ -15,11 +15,13 @@
 .arredoLogin {
   border-radius: 20px;
   opacity: 100%;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+ 
 }
 
 .bgLeft {
   background-color: #ffffff;
-
   background-position: center;
   padding: 0 10px;
   background-size: cover;
@@ -29,7 +31,6 @@
 
 #tamEntrar {
   background-image: url("https://i.imgur.com/8lB98zA.png");
-  
 }
 
 .bgRight {
@@ -37,7 +38,7 @@
   border: 1px solid #ffffff;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
-  padding: 70px 50px !important;
+  padding: 70px 70px !important;
 }
 
 h2 {
@@ -57,20 +58,29 @@ h1 {
 }
 
 .btn {
-  background: #24C6DC;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #514A9D, #24C6DC);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #514A9D, #24C6DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #24c6dc; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #514a9d,
+    #24c6dc
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #514a9d,
+    #24c6dc
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: #fff;
   transition: 0.5s;
   opacity: 1;
   border: none !important;
   border-radius: 30px;
   font-family: Poppins, sans-serif !important;
-
 }
 
 .btn:hover {
   opacity: 0.9;
+  transform: scale(0.8);
+  transition: all 0.3s ease;
 }
 
 input {
@@ -95,13 +105,24 @@ label {
   #tamEntrar {
     display: none !important;
   }
+  .bgRight {
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 70px 70px !important;
+  }
 }
 
-.form-check-input{
+.form-check-input {
   margin-top: 5px !important;
 }
 
 .naoTemCad {
   font-family: Poppins, sans-serif !important;
   font-size: 0.9rem !important;
+}
+
+.bgFooter {
+  background-image: url("https://images5.alphacoders.com/120/1202843.jpg") !important;
 }
