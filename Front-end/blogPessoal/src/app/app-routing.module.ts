@@ -7,18 +7,22 @@ import { PostagemEditComponent } from './edit/postagem-edit/postagem-edit.compon
 import { TemaEditComponent } from './edit/tema-edit/tema-edit.component';
 import { UsuarioEditComponent } from './edit/usuario-edit/usuario-edit.component';
 import { EntrarComponent } from './entrar/entrar.component';
+import { HomeComponent } from './home/home.component';
 import { InicioComponent } from './inicio/inicio.component';
+import { MenuInicioComponent } from './menu-inicio/menu-inicio.component';
 import { TemaComponent } from './tema/tema.component';
 
 const routes: Routes = [
 
-  {path: '', redirectTo: 'entrar', pathMatch: 'full'},
+  {path: '', redirectTo: 'home', pathMatch: 'full'},
 
   {path:'entrar', component: EntrarComponent},
   {path:'cadastro', component: CadastroComponent},
 
   {path: 'inicio', component: InicioComponent},
   {path: 'temas', component: TemaComponent},
+  {path: 'menu-inicio', component: MenuInicioComponent},
+  {path: 'home', component: HomeComponent},
 
   {path: 'tema-edit/:id', component: TemaEditComponent}, // passar parametro por rota no angular
   {path: 'tema-delete/:id', component: TemaDeleteComponent},                                      

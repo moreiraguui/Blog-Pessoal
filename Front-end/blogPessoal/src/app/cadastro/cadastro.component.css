@@ -2,43 +2,23 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap%27");
 
-
-#imgBackground {
-    background-image: url('https://i.imgur.com/Vyww2b0.png');
-    background-position: absolute;
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 100vh;
-    width: 100vh;
-
-}
-
 .bgGeral {
-background: #ad5389;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #3c1053, #ad5389);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #3c1053, #ad5389); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+/* background: #ad5389;  
+background: -webkit-linear-gradient(to left, #3c1053, #ad5389);  
+background: linear-gradient(to left, #3c1053, #ad5389); */
 
     /* background-image: url("https://i.imgur.com/AUyOIPz.jpg"); */
     /* padding: 80px 350px; */
   padding: 50px 0;
+  background-color: grey;
   }
   
 .arredoLogin {
-    border-radius: 20px;
+    border-radius: 30px;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
-}
-
-.bgRight {
     background-color: #ffffff;
-    background-position: center;
-    padding: 0 10px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-   
-
-}                                                                                   
+    padding: 30px 30px !important;
+   }
 
 #tamEntrar {
     background-image: url("https://i.imgur.com/QpjSQFn.png") !important;
@@ -63,13 +43,6 @@ background: linear-gradient(to left, #3c1053, #ad5389); /* W3C, IE 10+/ Edge, Fi
     }
 }
 
-.bgLeft {
-    background-color: #ffffff;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    padding: 30px 30px !important;
-   }
-
 label {
     font-size: 0.9rem !important;
     font-family: Montserrat, sans-serif !important;
@@ -93,4 +66,14 @@ button {
 button:hover {
     transform: scale(0.8);
     transition:all 0.3s ease;
+}
+
+.btn2 {
+    background-color:  black !important;
+    border: black 1px solid !important;
+    color: white;
+}
+
+.btn3 {
+    border: 2px solid black;
 }

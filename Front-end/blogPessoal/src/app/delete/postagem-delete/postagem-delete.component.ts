@@ -30,7 +30,7 @@ export class PostagemDeleteComponent implements OnInit {
     window.scroll(0,0)
     /* Caso de F5 (atualize a página) será informado e solicitado que o usuario entre novamente */
     if (environment.token == '') {
-      // alert('Sua sessão expirou, faça o login novamente.')
+      alert('Sua sessão expirou, faça o login novamente.')
       this.router.navigate(['/entrar'])
     } 
 

@@ -18,6 +18,8 @@ import { TemaDeleteComponent } from './delete/tema-delete/tema-delete.component'
 import { PostagemEditComponent } from './edit/postagem-edit/postagem-edit.component';
 import { PostagemDeleteComponent } from './delete/postagem-delete/postagem-delete.component';
 import { UsuarioEditComponent } from './edit/usuario-edit/usuario-edit.component';
+import { MenuInicioComponent } from './menu-inicio/menu-inicio.component';
+import { HomeComponent } from './home/home.component';
 
 
 
@@ -36,6 +38,8 @@ import { UsuarioEditComponent } from './edit/usuario-edit/usuario-edit.component
     PostagemEditComponent,
     PostagemDeleteComponent,
     UsuarioEditComponent,
+    MenuInicioComponent,
+    HomeComponent,
 
   ],
   imports: [
@@ -46,8 +50,8 @@ import { UsuarioEditComponent } from './edit/usuario-edit/usuario-edit.component
   ],
   // Serve para fazer uma rota interna para o angular nao quebrar, ao clicar no ver postagens ele abrir o card
   providers: [{
-    provide: LocationStrategy,
-    useClass: HashLocationStrategy
+      provide: LocationStrategy,
+      useClass: HashLocationStrategy
   }],
   bootstrap: [AppComponent]
 })

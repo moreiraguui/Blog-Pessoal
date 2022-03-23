@@ -19,6 +19,8 @@ export class InicioComponent implements OnInit {
   listaPostagens: Postagem[]
 
   nome = environment.nome
+  foto = environment.foto
+  id = environment.id
 
   tema: Tema = new Tema()
   listaTemas: Tema[]
@@ -38,7 +40,7 @@ export class InicioComponent implements OnInit {
     window.scroll(0,0)
 /* Caso de F5 (atualize a página) será informado e solicitado que o usuario entre novamente */
     if (environment.token == '') {
-      // alert('Sua sessão expirou, faça o login novamente.')
+      alert('Sua sessão expirou, faça o login novamente.')
       this.router.navigate(['/entrar'])
     } 
     this.authService.refreshToken();
@@ -85,6 +87,13 @@ export class InicioComponent implements OnInit {
       this.getAllPostagens
     })
 
+  }
+  sair(){
+    this.router.navigate(['/entrar'])
+    environment.token = ''
+    environment.nome = ''
+    environment.foto = ''
+    environment.id = 0
   }
 
 }
